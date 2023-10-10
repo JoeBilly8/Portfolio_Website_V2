@@ -1,0 +1,54 @@
+@import "./reset.css";
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-menu a, .btn-menu {
+    position: absolute;
+    top: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 2.5rem;
+}
+
+.container-menu a {
+    width: 1.5em;
+    height: 1.5em;
+    color: grey;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 0.1em solid white;
+}
+
+.container-menu a:hover {
+    border-color: red;
+    transition: 0.2s;
+}
+
+.container-menu a i {
+    color: grey;
+}
+
+.container-menu .btn-menu {
+    width: 2em;
+    height: 2em;
+    transition: 0.3s;
+    border: 0.1em solid red;
+}
+
+.container-menu .btn-menu, .active {
+    border-color: white;
+    color: 121212;
+    /* background-color: grey; */
+    transition: 0.2s;
+}
+
+.active {
+    transform: rotate(45deg);
+}
