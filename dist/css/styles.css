@@ -26,8 +26,7 @@ html, body {
     animation: spinCircle1 10s linear infinite;
 }
 
-.centre:hover + .circle1 {
-    background-color: blue;
+.centre:hover .circle2 {
     animation-play-state: paused;
 }
 
@@ -42,10 +41,6 @@ html, body {
     height: calc(100% - 60px);
     animation: spinCircle2 15s linear infinite;
 }
-
-/* .circle2:hover + .circle1 {
-    animation-play-state: paused;
-} */
 
 @keyframes spinCircle1 {
     0% {
@@ -63,7 +58,7 @@ html, body {
     100% {
         transform: rotate(360deg);
     }
-}
+} 
 
 .letters {
     top: 0;
