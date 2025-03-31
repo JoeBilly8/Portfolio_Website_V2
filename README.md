@@ -1,2 +1,2 @@
-# Portfolio_Website_V2
-My actual portfolio website - not the shite I created a couple years ago that contains the actual words 'soggy boi'
+# Portfolio Website - V2
+The second of my portfolio websites - a 'version 2' which includes better code, and a sleeker and more original design. Another good project to practice my pure HTML/CSS/JS as well as to show off all the other work I've done. 
