@@ -11,23 +11,34 @@
   <div class="container">
 
     <main class="main-content">
-    <div class="orbit-container">
-        <div class="initials">JM</div>
-        <div class="orbit-ball"></div>
-    </div>
-      <button class="circle add-btn">+</button>
+        <div class="orbit-container">
+            <div class="initials">JM</div>
+            <div class="orbit-ball"></div>
+        </div>
+        <button class="circle add-btn" id="add-button">
+            <span class="line horizontal"></span>
+            <span class="line vertical"></span>
+        </button>
+        <button class="contact-button">
+            <img class="svg" src="" alt="">
+        </button>
     </main>
 
     <footer class="footer">
       <div class="footer-left">
-        <!-- LinkedIn SVG goes here -->
-        <div class="icon-placeholder">[LinkedIn Icon]</div>
-        <!-- Lightbulb SVG goes here -->
-        <div class="icon-placeholder">[Lightbulb Icon]</div>
+        <div class="svg-container">
+            <a href="https://www.linkedin.com/in/joe-billy-moore/" target="_blank">
+                <img class="svg" src="./img/linkedin-svgrepo-com.svg" alt="GitHub Icon" />
+            </a>
+            <a href="https://github.com/JoeBilly8" target="_blank">
+                <img class="svg" src="./img/github-svgrepo-com.svg" alt="GitHub Icon" />
+            </a>
+        </div>
       </div>
       <div class="footer-right">JM PRODUCTIONS</div>
     </footer>
   </div>
   <script src="js/orbit.js"></script>
+  <script src="js/add-button.js"></script>
 </body>
 </html>
