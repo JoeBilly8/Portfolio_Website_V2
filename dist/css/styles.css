@@ -128,6 +128,71 @@
   .add-btn.active .horizontal {
     transform: rotate(-45deg);
   }
+
+  /* Only display select buttons when active */
+  .select-buttons {
+    display: none;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .select-buttons.active {
+    display: flex;
+  }
+
+  .contact-button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  }
+
+  .contact-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .work-button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  }
+
+  .work-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .about-button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  }
+  
+  .about-button img {
+    width: 25px;
+    height: 25px;
+}
   
   .footer {
     display: flex;
