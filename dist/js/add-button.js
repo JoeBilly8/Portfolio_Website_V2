@@ -7,9 +7,17 @@ button.addEventListener("click", () => {
     console.log("button clicked and open was " + open);
 
     if (!open) {
+
+        button.classList.add("opening");
         button.classList.add("active");
         displayButtons.classList.add("active");
         displayButtons.classList.remove("closing");
+
+        // To prevent selection text when opening the buttons
+        setTimeout(() => {
+            button.classList.remove("opening");
+        }, 400);
+
     } else {
         displayButtons.classList.add("closing");
         button.classList.remove("active");

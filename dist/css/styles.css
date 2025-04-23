@@ -53,7 +53,32 @@
     height: 120px;
     margin-bottom: 16px;
   }
-  
+
+.options-text {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.options-text h1 {
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 0;
+}
+
+.options-text h1.active {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
 /* restore circle shape and position */
 .initials {
     width: 120px;
@@ -148,6 +173,7 @@
     transform: translateY(0px);
     transition: opacity 0.4s ease, opacity 0.3s ease;
     pointer-events: auto;
+    transition: background 0.3s ease;
   }
 
   .select-buttons.active button {
@@ -166,8 +192,14 @@
   }
 
   .select-buttons button:hover {
-    
+    background: white;
   }
+
+  .select-buttons button:hover .svg {
+    filter: invert(100%) brightness(1.2);
+    transition: filter 0.3s ease;
+  }
+
 
   .contact-button {
     background: none;
