@@ -8,19 +8,20 @@ button.addEventListener("click", () => {
 
     if (!open) {
 
-        button.classList.add("opening");
+        button.classList.add("options-disabled");
         button.classList.add("active");
         displayButtons.classList.add("active");
         displayButtons.classList.remove("closing");
 
         // To prevent selection text when opening the buttons
         setTimeout(() => {
-            button.classList.remove("opening");
+            button.classList.remove("options-disabled");
         }, 400);
 
     } else {
         displayButtons.classList.add("closing");
         button.classList.remove("active");
+        button.classList.add("options-disabled");
 
         setTimeout(() => {
             displayButtons.classList.remove("closing");

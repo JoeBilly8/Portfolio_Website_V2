@@ -12,7 +12,7 @@ const plusButton = document.getElementById("add-button");
 
 // Helper to activate the right one
 function showText(el) {
-    if(!(plusButton.classList.contains("opening"))) {
+    if(!(plusButton.classList.contains("options-disabled"))) {
         allTexts.forEach(text => text.classList.remove("active"));
         el.classList.add("active");
     }
