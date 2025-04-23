@@ -1,139 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Inter:wght@200&display=swap');
-
+/* Base mobile styles */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #222;
-    color: #ddd;
-    margin: 0;
-    padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1rem;
 }
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 36px;
-}
-
-header {
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.timeline {
-    position: relative;
-    padding: 20px 0;
-}
-
-.timeline-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.timeline-header p {
-    font-size: 18px;
-}
-
-.arrow-placeholder {
-    font-size: 24px;
-}
-
-.timeline-line {
-    position: absolute;
-    left: 50%;
-    width: 4px;
-    background: #888;
-    top: 0;
-    bottom: 0;
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 50px 0;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  position: relative;
-}
-
-/* Position left and right timeline items */
-.timeline-item.left {
-  justify-content: flex-start;
-}
-
-.timeline-item.right {
-  justify-content: flex-end;
-}
-
-/* Dots at the connection points */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #ddd;
-  border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-/* Connecting lines from center to timeline items */
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  width: 50px; /* Adjust based on spacing */
-  height: 2px;
-  background-color: #ddd;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Left item: Line extends from center to left */
-.timeline-item.left::after {
-  right: calc(50%); /* Align with the dot */
-  transform-origin: right;
-}
-
-/* Right item: Line extends from center to right */
-.timeline-item.right::after {
-  left: calc(50%);
-  transform-origin: left;
-}
-
-/* Content box styling */
-.content {
-  background: #555;
-  padding: 20px;
-  border-radius: 8px;
-  width: 40%;
-  color: #fff;
-}
-
-
-.content {
-    background: #555;
-    padding: 20px;
-    border-radius: 8px;
-    width: 40%;
-    color: #fff;
-}
-
-.content h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    margin: 0;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+/* Media Queries */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
