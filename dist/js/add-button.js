@@ -4,8 +4,6 @@ const displayButtons = document.getElementsByClassName("select-buttons")[0];
 let open = false;
 button.addEventListener("click", () => {
 
-    console.log("button clicked and open was " + open);
-
     if (!open) {
 
         button.classList.add("options-disabled");
@@ -16,12 +14,14 @@ button.addEventListener("click", () => {
         // To prevent selection text when opening the buttons
         setTimeout(() => {
             button.classList.remove("options-disabled");
+            displayButtons.classList.remove("link-disabled");
         }, 400);
 
     } else {
         displayButtons.classList.add("closing");
         button.classList.remove("active");
         button.classList.add("options-disabled");
+        displayButtons.classList.add("link-disabled");
 
         setTimeout(() => {
             displayButtons.classList.remove("closing");
@@ -30,7 +30,5 @@ button.addEventListener("click", () => {
     }
 
     open = !open;
-
-    console.log("open is now " + open);
 
 });

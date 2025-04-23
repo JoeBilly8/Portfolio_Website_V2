@@ -165,7 +165,7 @@
     pointer-events: none;
   }
 
-  .select-buttons button {
+  .select-buttons a {
     position: absolute;
     height: 0;
     bottom: 0;
@@ -176,13 +176,17 @@
     transition: background 0.3s ease;
   }
 
-  .select-buttons.active button {
+  .select-buttons.link-disabled a {
+    pointer-events: none;
+  } 
+
+  .select-buttons.active a {
     height: 40px;
     pointer-events: auto;
     animation: ballZoomOut 0.5s forwards ease-out;
   }
 
-  .select-buttons.closing button {
+  .select-buttons.closing a {
     pointer-events: none;
     animation: ballZoomIn 0.5s forwards ease-out;
   }
@@ -191,11 +195,11 @@
     animation: imgShrink 0.5s forwards ease-out;
   }
 
-  .select-buttons button:hover {
+  .select-buttons a:hover {
     background: white;
   }
 
-  .select-buttons button:hover .svg {
+  .select-buttons a:hover .svg {
     filter: invert(100%) brightness(1.2);
     transition: filter 0.3s ease;
   }
